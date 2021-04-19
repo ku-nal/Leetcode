@@ -16,3 +16,16 @@ class Solution(object):
                 ans=max(ans,dp[i][j])
         print(dp)
         return ans*ans
+    
+   
+
+'''''Approach'''''''
+So the question is solved using Dynamic Programming.
+
+So if we want to increase the length of our square we want to check our previous state also. So the states that are contributing to the current state is the previous cell in the
+same row, previous cell in the same columns ans the state [i-1][j-1] (One Row up and one Column up). So if the current cell having value equals to 1 then we check these states.
+So, we have to find the minimum value among these previous states. So the new produced square is of having side equals to 1+min(states([i-1][j],[i][j-1],[i-1][j-1])). 
+
+For any query mail me at :
+kunalmakwana18@gnu.ac.in
+''''''''''''''''''''
