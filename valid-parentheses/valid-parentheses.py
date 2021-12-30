@@ -26,4 +26,3 @@ class Solution(object):
                     stack.pop()
         if len(stack)==0:return True
         return False
-                
